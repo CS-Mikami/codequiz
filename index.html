@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h4 id="see-highscores">See Highscores</h4>
+        <h4 class="timer-left">Time left: <span id="timer"></span></h4>
+    </header>
+    <main>
+    <div id="start-container" class="shown">
+        <div class="container-start">
+            <h1>Let's Take a Coding Quiz!</h1>
+            <h3>Test Your Knowledge A See How You Compare!</h3>
+            <h4>Can you handle these coding questions under a time crunch?
+            </h4>
+            <button class="btn-start-end" id="link-start">Link Start!</button>
+        </div>
+    </div>
+
+    <div id="question-container" class="hidden">
+        <div class="container-questions">
+            <div id="questions"></div>
+            <div id="answers-buttons" class="btn-grid"></div>
+        </div>
+    </div>
+    </main>
+    <div id="end-container" class="hidden">
+        <div class="container-end">
+            <div id="score-banner">
+                <h1>All done!</h1>
+            </div>
+            <form id="name-form" class="name">
+                <p> Enter Name:
+                    <input type="text" name="name" id="name" class="text-input" />
+                    <button class="btn-start-end" id="sumbission-score" type="submit">Submit</button>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <div id="highscore-container" class="hidden">
+        <div class="highscores-container">
+            <h2 class="highscore">High Scores</h2>
+            <ol id="highscore-list" class="score-list"></ol>
+            <div>
+                <button class="btn" id="back">Back</button>
+                <button class="btn" id="clear-highscores">Clear high scores</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden" id="correct">
+        <h2>Correct!</h2>
+    </div>
+    <div class="hidden" id="wrong">
+        <h2>Wrong!</h2>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
